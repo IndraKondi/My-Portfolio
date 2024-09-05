@@ -3,105 +3,101 @@
     display: flex;
     flex-wrap: wrap;
     padding: 50px;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), 
-    url('https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHx8') no-repeat center center;
-    background-size: cover;
-    box-sizing: border-box;
+    background: #040615;
 }
 
 /* About section styles */
 .about-section {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: white; /* Darker background for contrast */
     padding: 40px;
     margin-right: 20px;
-    width: 45%;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.9);
+    width: 40%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.8);
     border-radius: 10px;
 }
 
 .about-title {
     font-size: 25px;
     margin-bottom: 1rem;
-    color: whitesmoke;
+    color: #040615; /* Softer white for titles */
 }
 
 .about-text {
     font-size: 1rem;
-    color: whitesmoke;
-    text-align: left;
-    word-wrap: break-word;
-    max-width: 100%;
+    color: #040615; /* Lighter gray for text readability */
+    text-align: justify;
+    padding-right: 15px;
 }
 
 /* Education section styles */
 .education-section {
     padding: 30px;
     padding-bottom: 5px;
-    width: 45%;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.9);
+    width: 40%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.8);
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: white; /* Dark gray-blue for contrast */
 }
 
 .education-title {
     font-size: 25px;
     margin-bottom: 1rem;
-    color: whitesmoke;
+    color: #040615; /* Softer white */
 }
 
 hr {
     border: 0;
     height: 1px;
-    background: #333;
-    background-image: linear-gradient(to right, #f5eeee, #d22d2d, #f5ecec);
+    background: #999;
+    background-image: linear-gradient(to right, #d3d3d3, #a93226, #d3d3d3);
     margin: 1rem 0;
     width: 50%;
 }
 
 .education-list {
     list-style: none;
-    padding: 0;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
 .education-item {
-    position: relative;
-    padding: 10px;
+    padding: 15px;
     margin: 1rem 0;
-    background: white;
-    border: 2px solid #f9fafa;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #021428; /* Darker blue-gray */
+    border-radius: 5px 60px 60px 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     width: 100%;
     text-align: left;
-    color: black;
-    word-wrap: break-word; /* Ensures long words break onto the next line */
-    overflow-wrap: break-word; /* Additional support for word breaks */
-    box-sizing: border-box; /* Ensure padding and border are included in width */
+    color: #ffffff; /* White text */
 }
-
 
 .education-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(235, 233, 233, 0.9);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
 }
 
+/* Responsive Styles */
+
+/* For tablets and small screens */
 /* Responsive Styles */
 
 /* For tablets and small screens */
 @media (max-width: 768px) {
     .about-education-section {
         flex-direction: column;
-        padding: 30px;
+        padding: 20px;
+        align-items: center; /* Center the sections within the container */
     }
 
     .about-section,
     .education-section {
-        width: 90%;
-        margin: 0 auto 20px;
+        width: 100%; /* Full width of the container */
+        max-width: 800px; /* Max width to ensure it doesn't get too wide */
+        margin-bottom: 20px; /* Add margin to separate the sections */
+        padding: 20px;
+        box-sizing: border-box; /* Ensure padding and border are included in width */
     }
 
     .about-text {
@@ -109,60 +105,48 @@ hr {
     }
 
     .education-list {
-        align-items: center;
+        align-items: flex-start; /* Align items to start */
     }
 
     hr {
-        width: 80%;
+        width: 100%; /* Full width for horizontal rule */
     }
 }
 
 /* For mobile screens */
 @media (max-width: 480px) {
     .about-education-section {
-        padding: 20px;
+        padding: 10px; /* Reduced padding for smaller screens */
+        align-items: center; /* Center the sections within the container */
     }
 
     .about-section,
     .education-section {
-        width: 100%;
-        margin: 0;
-        padding: 20px;
-        box-sizing: border-box;
+        width: 100%; /* Full width of the container */
+        max-width: 100%; /* Ensures it doesn't exceed viewport width */
+        margin-bottom: 20px; /* Space between sections */
+        padding: 15px; /* Reduced padding */
+        box-sizing: border-box; /* Ensure padding and border are included in width */
     }
 
     .about-title {
-        font-size: 20px;
+        font-size: 18px; /* Adjust title font size for mobile */
     }
 
     .about-text {
-        font-size: 0.8rem;
+        font-size: 0.8rem; /* Adjust text size for readability */
     }
 
     .education-title {
-        font-size: 20px;
+        font-size: 18px; /* Adjust education title font size */
     }
 
     .education-item {
-        padding: 8px;
+        padding: 5px;
         font-size: 0.9rem;
-        word-wrap: break-word; /* Ensures that long words break correctly on mobile */
-        overflow-wrap: break-word;
-        width: 100%;
-        box-sizing: border-box; /* Prevent overflow on small screens */
-    }
-
-    .education-list {
-        width: 100%; /* Ensure the list takes full width */
     }
 
     hr {
-        width: 90%;
-    }
-
-    /* Ensure the background image covers the full width without repeating */
-    .about-education-section {
-        background-size: cover;
-        background-position: center center;
+        width: 100%; /* Full width for hr on mobile */
     }
 }
