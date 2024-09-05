@@ -3,17 +3,18 @@
     display: flex;
     flex-wrap: wrap;
     padding: 50px;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHx8'), linear-gradient(to right, #1f3b58, #34495e);
-    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), 
+    url('https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHx8') no-repeat center center;
     background-size: cover;
+    box-sizing: border-box;
 }
 
 /* About section styles */
 .about-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 40px;
     margin-right: 20px;
-    width: 40%;
+    width: 45%;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.9);
     border-radius: 10px;
 }
@@ -26,17 +27,17 @@
 
 .about-text {
     font-size: 1rem;
-    max-width: 450px;
     color: whitesmoke;
     text-align: left;
-    padding-right: 15px;
+    word-wrap: break-word;
+    max-width: 100%;
 }
 
 /* Education section styles */
 .education-section {
     padding: 30px;
     padding-bottom: 5px;
-    width: 40%;
+    width: 45%;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.9);
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.2);
@@ -67,7 +68,7 @@ hr {
 
 .education-item {
     position: relative;
-    padding: 7px;
+    padding: 10px;
     margin: 1rem 0;
     background: white;
     border: 2px solid #f9fafa;
@@ -77,7 +78,11 @@ hr {
     width: 100%;
     text-align: left;
     color: black;
+    word-wrap: break-word; /* Ensures long words break onto the next line */
+    overflow-wrap: break-word; /* Additional support for word breaks */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
 }
+
 
 .education-item:hover {
     transform: translateY(-5px);
@@ -114,11 +119,16 @@ hr {
 
 /* For mobile screens */
 @media (max-width: 480px) {
+    .about-education-section {
+        padding: 20px;
+    }
+
     .about-section,
     .education-section {
         width: 100%;
         margin: 0;
         padding: 20px;
+        box-sizing: border-box;
     }
 
     .about-title {
@@ -134,11 +144,25 @@ hr {
     }
 
     .education-item {
-        padding: 5px;
+        padding: 8px;
         font-size: 0.9rem;
+        word-wrap: break-word; /* Ensures that long words break correctly on mobile */
+        overflow-wrap: break-word;
+        width: 100%;
+        box-sizing: border-box; /* Prevent overflow on small screens */
+    }
+
+    .education-list {
+        width: 100%; /* Ensure the list takes full width */
     }
 
     hr {
         width: 90%;
+    }
+
+    /* Ensure the background image covers the full width without repeating */
+    .about-education-section {
+        background-size: cover;
+        background-position: center center;
     }
 }
