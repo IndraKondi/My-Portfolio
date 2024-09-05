@@ -34,14 +34,26 @@ const About = () => {
         />
         <ol className="education-list">
           <li className="education-item">
-            <pre><h3>Gayatri Vidhya Parishad College Of Engineering</h3><br />B.Tech in Computer Science Engineering<br></br>2021 - 2025<h4>Semester : 9.30 CGPA</h4></pre>
+            <h3>Gayatri Vidhya Parishad College Of Engineering</h3>
+            <p>B.Tech in Computer Science Engineering</p>
+            <p>2021 - 2025</p>
+            <h4>Semester: 9.30 CGPA</h4>
           </li>
+
           <li className="education-item">
-            <pre><h3>Adithya Junior College</h3><br></br>Intermediate (MPC)<br></br>2019 - 2021<br></br><h4>Intermediate : 977/1000</h4></pre>
+            <h3>Adithya Junior College</h3>
+            <p>Intermediate (MPC)</p>
+            <p>2019 - 2021</p>
+            <h4>Intermediate: 977/1000</h4>
           </li>
+
           <li className="education-item">
-            <pre><h3>Sri Sathya Sai Vidhya Vihar E.M School</h3><br />Secondary Education (SSC)<br></br>2019<br></br><h4>SSC : 10 GPA</h4></pre>
+            <h3>Sri Sathya Sai Vidhya Vihar E.M School</h3>
+            <p>Secondary Education (SSC)</p>
+            <p>2019</p>
+            <h4>SSC: 10 GPA</h4>
           </li>
+
         </ol>
       </div>
     </section>

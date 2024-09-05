@@ -11,6 +11,7 @@
     padding: 0 5rem;
     color: black;
     box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
 .home-content {
@@ -35,7 +36,7 @@
 .home-button {
     margin-top: 2rem;
     margin-right: 30px;
-    padding: 12px;
+    padding: 12px 24px;
     font-size: 18px;
     background: white;
     border: 2px solid #e60576;
@@ -80,23 +81,25 @@
         padding: 0 2rem;
         padding-top: 100px;
         text-align: center;
+        height: auto;
+        margin-top: 5rem;
     }
 
     .home-content {
         max-width: 100%;
         padding-left: 0;
-        order: 2; /* Move content to the second position */
+        order: 2;
     }
 
     .home-photo {
-        width: 60%;
-        margin-top: 2rem;
-        order: 1; /* Move photo to the first position */
+        width: 100%;
+        margin-top: zrem;
+        order: 1;
     }
 
     .photo-img {
-        width: 200px;
-        height: 200px;
+        width: 220px;
+        height: auto;
     }
 
     .home-title {
@@ -110,7 +113,7 @@
     .home-button {
         margin: 1rem 0;
         font-size: 16px;
-        padding: 10px;
+        padding: 10px 20px;
     }
 }
 
@@ -118,25 +121,27 @@
 @media (max-width: 480px) {
     .home-section {
         padding: 0 1rem;
+        height: auto;
     }
 
     .home-content {
-        order: 2; /* Move content to the second position */
+        order: 2;
+        padding-left: 0;
     }
 
     .home-photo {
-        width: 80%;
-        margin-top: 1.5rem;
-        order: 1; /* Move photo to the first position */
+        width: 100%;
+        margin-top: 2rem;
+        order: 1;
     }
 
     .photo-img {
-        width: 150px;
-        height: 150px;
+        width: 160px;
+        height: auto;
     }
 
     .home-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .home-subtitle {
@@ -145,6 +150,7 @@
 
     .home-button {
         font-size: 14px;
-        padding: 8px;
+        padding: 8px 16px;
+        margin: 1rem auto;
     }
 }
