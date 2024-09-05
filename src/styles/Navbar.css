@@ -1,0 +1,113 @@
+/* Navbar Container */
+.navbar-container {
+  position: fixed;
+  width: 100%;
+  background-color: rgb(11, 10, 10);
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* Logo Style */
+.navbar-logo {
+  font-family: monospace;
+  font-size: 2rem;
+  color: wheat;
+  margin: 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  border: 1px solid black;
+}
+
+.navbar-logo:hover {
+  color: #eeebeb;
+}
+
+/* Links Container */
+.navbar-links {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  transition: max-height 0.3s ease; /* Smooth transition for menu opening */
+}
+
+/* Navbar Links Style */
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 15px;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: whitesmoke;
+  border-bottom: 2px solid #deb992;
+}
+
+/* Active Navbar Link Style */
+.navbar-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid #ff6347;
+}
+
+/* Menu Button for Mobile */
+.menu-button {
+  display: none;
+  font-size: 1.5rem;
+  color: #fff;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Show menu button and hide links on smaller screens */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-logo {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .navbar-links {
+    display: none; /* Hide links by default */
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .navbar-links.active {
+    display: flex; /* Show links when active */
+  }
+
+  .navbar-link {
+    display: block;
+    padding: 10px 0;
+    font-size: 16px;
+  }
+
+  .menu-button {
+    display: block; /* Show menu button */
+  }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+  .navbar-logo {
+    font-size: 1.25rem;
+  }
+
+  .navbar-link {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,144 @@
+/* Container for the combined section */
+.about-education-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHx8'), linear-gradient(to right, #1f3b58, #34495e);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* About section styles */
+.about-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+    padding: 40px;
+    margin-right: 20px;
+    width: 40%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+}
+
+.about-title {
+    font-size: 25px;
+    margin-bottom: 1rem;
+    color: whitesmoke;
+}
+
+.about-text {
+    font-size: 1rem;
+    max-width: 450px;
+    color: whitesmoke;
+    text-align: left;
+    padding-right: 15px;
+}
+
+/* Education section styles */
+.education-section {
+    padding: 30px;
+    padding-bottom: 5px;
+    width: 40%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.education-title {
+    font-size: 25px;
+    margin-bottom: 1rem;
+    color: whitesmoke;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #f5eeee, #d22d2d, #f5ecec);
+    margin: 1rem 0;
+    width: 50%;
+}
+
+.education-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.education-item {
+    position: relative;
+    padding: 7px;
+    margin: 1rem 0;
+    background: white;
+    border: 2px solid #f9fafa;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: left;
+    color: black;
+}
+
+.education-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(235, 233, 233, 0.9);
+}
+
+/* Responsive Styles */
+
+/* For tablets and small screens */
+@media (max-width: 768px) {
+    .about-education-section {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .about-section,
+    .education-section {
+        width: 90%;
+        margin: 0 auto 20px;
+    }
+
+    .about-text {
+        font-size: 0.9rem;
+    }
+
+    .education-list {
+        align-items: center;
+    }
+
+    hr {
+        width: 80%;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+    .about-section,
+    .education-section {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .about-title {
+        font-size: 20px;
+    }
+
+    .about-text {
+        font-size: 0.8rem;
+    }
+
+    .education-title {
+        font-size: 20px;
+    }
+
+    .education-item {
+        padding: 5px;
+        font-size: 0.9rem;
+    }
+
+    hr {
+        width: 90%;
+    }
+}
