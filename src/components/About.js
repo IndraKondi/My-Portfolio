@@ -19,8 +19,7 @@ const About = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1.5 }}
         >
-          Aspiring Computer Science graduate with a solid foundation in programming and a keen aptitude for learning, eager to contribute fresh perspectives and technical expertise to a dynamic professional environment.
-        </motion.p>
+        I am a final year Computer Science Engineering student with a strong passion for technology and innovation. My experience includes an internship at KeshavSoft as a Web Developer, where I enhanced my skills in both frontend and backend development using HTML, CSS, JavaScript, and various backend technologies. Notable projects include developing an AI-Powered Fitness Tracker using React.js and Node.js, creating a Career Guidance Web Application for engineering students, and building a Stock Market Price Prediction model with time series analysis. I am proficient in C, C++, Python, and experienced with databases like MongoDB and SQL. My certifications in Python Foundations, Google Data Analytics, and Cybersecurity, coupled with my achievements in regional coding competitions and the Smart India Hackathon, highlight my technical capabilities and problem-solving skills. Actively involved in IEEE and ROTRACT GVP clubs, I engage in community service and professional development. I am driven by a desire to explore advanced projects in machine learning and deep learning, aiming to make a significant impact in the tech industry through innovative and effective solutions.        </motion.p>
       </div>
 
       {/* Education Section */}
